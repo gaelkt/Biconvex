@@ -13,8 +13,8 @@ To run the code, do:
 
 ## Analysis
 
-- -- **Sampling effect** : https://40.113.14.226:8000/checkserver/
-- -- **Header** : Authorization token
+- -- **Sampling effect** : 
+
 
 
 
