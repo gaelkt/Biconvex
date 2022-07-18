@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jul 18 16:43:07 2022
 
-@author: gaelk
-"""
 
 # Glass-Imaging Assignment
 
@@ -14,6 +9,8 @@ This code has been tested on python 3.8
 To run the code, do:
 
 python run.py --D 125  --R1 50  --T 5 --R2 50 --OD 12.1   --D2 70  --_lambda 500 --N 15 --M 128 --h 100
+
+The output is a png file in the same folder.
 
 The parameters D, R1, T, R2, OD, D2, h are in mm. _lambda is in nm. Default values are in the file run.py (See function main())
 
