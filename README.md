@@ -50,4 +50,4 @@ More realistically the blur kernel is unknown and has to be estimated with the s
 
 4. Computational cost: It requires significant effort to develop efficient deblurring algorithms directly on mobile devices. 
 
-
+5. NN can work with aberrations difficult to estimate mathematically
