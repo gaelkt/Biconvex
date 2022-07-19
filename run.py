@@ -1,7 +1,6 @@
 
 # -*- coding: utf-8 -*-
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 import argparse
@@ -13,11 +12,9 @@ from utils import Biconvex, Ray
 
 def plot_psf(lens, name='output.png'):
     
-    
     delta_h = lens.delta_h  # size of each pixel (h/M)
     r_CoC = 0.5*lens.d_CoC/delta_h # Radius of the CoC normaized by pixel width
           
-        
     # Object is located at distance D, and aperture lens is OD
     # Maximum angle for ray is given by
     alpha_max = np.arctan(0.5*lens.OD/lens.D)
@@ -47,7 +44,6 @@ def plot_psf(lens, name='output.png'):
         
         # radius on sensor plane normalized by pixel sensor
         radii_alpha = vs[1]/delta_h
-        
         radius.append(radii_alpha)
         
     
@@ -83,8 +79,6 @@ def plot_psf(lens, name='output.png'):
         
     return 0
     
-
-
 
 
 def main():
@@ -124,7 +118,6 @@ def main():
     ap.add_argument("--name", type=str, default='psf.png',
                     help="Image name")
    
-
     args = ap.parse_args()
 
     D = args.D 
@@ -139,12 +132,12 @@ def main():
     h = args.h 
     name = args.name 
     
-
+    # Instance of the lens
     lens = Biconvex(D, R1, T, R2, OD, D2,_lambda, N, M, h)
     
+    # Plot psf
     plot_psf(lens, name=name)
     
-
 
 if __name__ == '__main__':
     main()
