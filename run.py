@@ -13,7 +13,6 @@ from utils import Biconvex, Ray
 def plot_psf(lens, name='output.png'):
     
     delta_h = lens.delta_h  # size of each pixel (h/M)
-    r_CoC = 0.5*lens.d_CoC/delta_h # Radius of the CoC normaized by pixel width
           
     # Object is located at distance D, and aperture lens is OD
     # Maximum angle for ray is given by
@@ -52,10 +51,8 @@ def plot_psf(lens, name='output.png'):
         
     fig, ax = plt.subplots()
         
-    # Plot circle of confusion on sensor plane
-    ax.add_patch(plt.Circle(center, r_CoC, fill=False))  
-        
-
+ 
+    
     # We want to represent sensor plane in 2D
     # We assign a random angle to each image
     angles = list((np.linspace(0, 2*np.pi, lens.N)))

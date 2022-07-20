@@ -12,7 +12,7 @@ python run.py --D 125  --R1 50  --T 5 --R2 50 --OD 12.1   --D2 70  --_lambda 500
 
 The wavelength _lambda is in nm and the parameters D, R1, T, R2, OD, D2, h are in mm. Default values are in the file run.py (See function main())
 
-The output is a file 'tests.png' in the same folder.
+The output is a file 'psf.png' in the same folder.
 
 ## Analysis
 
