@@ -1,6 +1,6 @@
 
 
-# Glass-Imaging Assignment
+# Simulation Code for a Biconvex Lens
 
 ## Requirements
 This code has been tested on python 3.8
